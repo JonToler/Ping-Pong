@@ -16,8 +16,8 @@ for (i = 1; i <= 100; i ++){
       return "ping pong";
     }else if (digits % 3 === 0){
         return "ping";
-    //   }else if (digits % 5 === 0){
-    //       return pong;
+    }else if (digits % 5 === 0){
+        return "pong";
 
       }
     }
