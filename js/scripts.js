@@ -13,6 +13,9 @@ function pingPong(digits){
        if (digits % 3 == 0){
       return "ping";
       }
+      if (digits % 5 == 0){
+        return "pong";
+      }
   return digits;
 }
 
