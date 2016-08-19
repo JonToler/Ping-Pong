@@ -18,7 +18,7 @@ https://github.com/JonToler/Ping-Pong
 
 
 ## Known Bugs
-_None yet_
+_Will only print one result at a time_
 
 ## Support and contact details
 * _tolerjonathan@gmail.com_

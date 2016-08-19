@@ -1,6 +1,6 @@
 //Business logic
 function pingPong(digits){
-   ball =[digits];
+  var ball = parseInt(digits);
   var pinPongTable;
 
 
@@ -21,7 +21,7 @@ for (i = 1; i <= 100; i ++){
 $(document).ready(function(){
   $("form#pingPong").submit(function(event){
     $("#btn1").click(function(){
-      $("#hidden1").append(ball);
+      $("#hidden").append(ball);
     });
     $("#hidden1").hide();
     var number = pingPong($("#digits").val());
