@@ -2,6 +2,9 @@
 function pingPong(digits){
   var pingInNumType = parseInt(digits);
   var pinPongTable;
+  var ping = "ping";
+  var pong = "pong";
+
   //var arrOfnumsInStringType = digits.split("");
   alert (digits);
   //alert (arrOfnumsInStringType);
@@ -10,17 +13,18 @@ function pingPong(digits){
   // if ((digits < 0) || (digits >=50)){
   //   return "please enter a new Number:";
   // }
-       if (digits % 3 == 0){
-      return "ping";
+for (i = 1; i <= 100; i ++){
+    if ((digits % 5 === 0)&&(digits % 3 === 0)){
+      return "ping pong";
+    // }else if (digits % 3 === 0){
+    //     return ping;
+    //   }else if (digits % 5 === 0){
+    //       return pong;
+
       }
-      if (digits % 5 == 0){
-        return "pong";
-      }
-  return digits;
+    }
+    return digits;
 }
-
-
-
 
 
 
