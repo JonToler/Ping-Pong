@@ -1,6 +1,6 @@
 # Ping-Pong
 
-#### _A web page which coverts Arabic numbers to Roman numerals.  and A Cryptosquare, which is a classic tool for composing secret messages is called a square code. August 18, 2016 _
+#### _A web page which  _
 
 #### By _**Jon Toler**_
 
