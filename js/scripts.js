@@ -3,14 +3,7 @@ function pingPong(digits){
   var pingInNumType = parseInt(digits);
   var pinPongTable;
 
-  //var arrOfnumsInStringType = digits.split("");
-  alert (digits);
-  //alert (arrOfnumsInStringType);
-  //if ((arrOfnumsInStringType <= 0) || (arrOfnumsInStringType >= 50)){
-
-  // if ((digits < 0) || (digits >=50)){
-  //   return "please enter a new Number:";
-  // }
+  
 for (i = 1; i <= 100; i ++){
     if ((digits % 5 === 0)&&(digits % 3 === 0)){
       return "ping pong";
