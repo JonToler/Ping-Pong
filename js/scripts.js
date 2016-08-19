@@ -2,13 +2,17 @@
 function pingPong(digits){
   var pingInNumType = parseInt(digits);
   var pinPongTable;
-  var arrOfnumsInStringType = digits.split("");
+  //var arrOfnumsInStringType = digits.split("");
   alert (digits);
-  alert (arrOfnumsInStringType);
-  if ((arrOfnumsInStringType <0) || (arrOfnumsInStringType >=50)){
-    return "please enter a new Number:";
-  }
+  //alert (arrOfnumsInStringType);
+  //if ((arrOfnumsInStringType <= 0) || (arrOfnumsInStringType >= 50)){
 
+  // if ((digits < 0) || (digits >=50)){
+  //   return "please enter a new Number:";
+  // }
+       if (digits % 3 == 0){
+      return "ping";
+      }
   return digits;
 }
 
