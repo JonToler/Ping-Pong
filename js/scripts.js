@@ -1,9 +1,9 @@
 //Business logic
 function pingPong(digits){
-  var pingInNumType = parseInt(digits);
+   ball =[digits];
   var pinPongTable;
 
-  
+
 for (i = 1; i <= 100; i ++){
     if ((digits % 5 === 0)&&(digits % 3 === 0)){
       return "ping pong";
@@ -14,26 +14,19 @@ for (i = 1; i <= 100; i ++){
 
       }
     }
-    return digits;
+    return ball;
 }
-
-
-
-
-
-
-
-
-
-
 
 //UI logic
 $(document).ready(function(){
   $("form#pingPong").submit(function(event){
-    event.preventDefault();
+    $("#btn1").click(function(){
+      $("#hidden1").append(ball);
+    });
     $("#hidden1").hide();
     var number = pingPong($("#digits").val());
     $("#numResults").text(number);
     $("#hidden1").slideDown();
+    event.preventDefault();
   });
 });
