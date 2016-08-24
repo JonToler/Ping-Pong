@@ -11,6 +11,7 @@ https://github.com/JonToler/Ping-Pong
 * _Numbers divisible by 15 are replaced with "ping-pong" ex: input of 30 will result in an output of "Ping-Pong"._
 * _A user should be able to enter a new number and see new results over and over again._
 
+
 ## Setup/Installation Requirements for leap year detector
 * _Clone this repository to your desktop_
 * _Open index.html in the browser of your choosing_
