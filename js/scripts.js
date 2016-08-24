@@ -1,32 +1,30 @@
 //Business logic
-function pingPong(digits){
-  var ball = parseInt(digits);
-  var pinPongTable;
-
-
-for (i = 1; i <= 100; i ++){
+var pingPongTable = [];
+function pingPong(digits) {
+  pinPongTable = [];
+  for (var i = 1; i <= digits; i ++) {
     if ((digits % 5 === 0)&&(digits % 3 === 0)){
-      return "ping pong";
-    }else if (digits % 3 === 0){
-        return "ping";
-    }else if (digits % 5 === 0){
-        return "pong";
-
-      }
+      pingPongTable.push("ping pong");
+    } else if (digits % 3 === 0){
+      pingPongTable.push("ping");
+    } else if (digits % 5 === 0){
+      pingPongTable.push("pong");
+    }else {
+      pingPongTable.push(i);
     }
-    return ball;
-}
-
+  };
+  return pingPongTable;
+};
 //UI logic
 $(document).ready(function(){
   $("form#pingPong").submit(function(event){
-    $("#btn1").click(function(){
-      $("#hidden").append(ball);
-    });
-    $("#hidden1").hide();
+    $("#hidden").hide();
     var number = pingPong($("#digits").val());
-    $("#numResults").text(number);
-    $("#hidden1").slideDown();
+    for (var i = 0; i < pingPongTable.length; i++){
+      $("#hidden").append("<li>" + pingPongTable[i] + "</li>");
+      };
+    $("#hidden").slideDown();
+
     event.preventDefault();
   });
 });
