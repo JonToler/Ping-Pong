@@ -1,13 +1,13 @@
 //Business logic
 var pingPongTable = [];
-function pingPong(digits) {
+function pingPong(number) {
   pinPongTable = [];
-  for (var i = 1; i <= digits; i ++) {
-    if ((digits % 5 === 0)&&(digits % 3 === 0)){
+  for (var i = 1; i <= number; i ++) {
+    if ((i % 5 === 0)&&(i % 3 === 0)){
       pingPongTable.push("ping pong");
-    } else if (digits % 3 === 0){
+    } else if (i % 3 === 0){
       pingPongTable.push("ping");
-    } else if (digits % 5 === 0){
+    } else if (i % 5 === 0){
       pingPongTable.push("pong");
     }else {
       pingPongTable.push(i);
