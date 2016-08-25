@@ -1,7 +1,7 @@
 //Business logic
-var pingPongTable = [];
 function pingPong(number) {
   pinPongTable = [];
+  pingPongTable = [];
   for (var i = 1; i <= number; i ++) {
     if ((i % 5 === 0)&&(i % 3 === 0)){
       pingPongTable.push("ping pong");
@@ -19,7 +19,8 @@ function pingPong(number) {
 $(document).ready(function(){
   $("form#pingPong").submit(function(event){
     $("#hidden").hide();
-    var number = pingPong($("#digits").val());
+    var arrNumber = $("#digits")
+    var number = pingPong($(arrNumber).val());
     for (var i = 0; i < pingPongTable.length; i++){
       $("#hidden").append("<li>" + pingPongTable[i] + "</li>");
       };
