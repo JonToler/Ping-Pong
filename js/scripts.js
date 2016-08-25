@@ -1,6 +1,5 @@
 //Business logic
 function pingPong(number) {
-  pinPongTable = [];
   pingPongTable = [];
   for (var i = 1; i <= number; i ++) {
     if ((i % 5 === 0)&&(i % 3 === 0)){
